@@ -1,0 +1,66 @@
+/* María Laura Asuaje */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+/* .main-header{
+    border: 1px solid white;
+    background-color: indianred;
+    width: 100%;
+    position: fixed;
+    top: 10px;
+    padding: 15px;
+    display: flex;
+} */
+
+/*versión limairy*/
+.main-header{
+    border: 1px solid white;
+    background-color: rgb(241, 171, 171);
+    width: 100%;
+    position: fixed;
+    /* top: 10px; */
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+.nav-header{
+}
+.menu-nav{
+    border: 6px solid white;
+    /* margin: 0;
+    padding: 0; */
+}
+.menu-item{
+}
+/* quitamos el subrayado a todos los enlaces */
+a{
+    text-decoration: none;
+}
+
+/* clase logo
+.logo{
+    border: 1px solid pink;
+    height: 150px;
+}
+clase lista 
+ ul{
+    border: 1px solid white;
+    color: white;
+}
+clase menu navegación
+.nav-header{
+    border: 2px solid pink;
+    display: grid;
+    width: 100%;
+}
+clase items menu navegación
+.menu-item{
+    display: flex;
+    justify-content: space-between;
+} */
