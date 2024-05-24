@@ -41,19 +41,22 @@ html{
     color: inherit;
 }
 /* Estilos para la tabla columnas */
-.table-columns th:first-child, .table-columns td:first-child{
+.table-columns th:first-child, 
+.table-columns td:first-child{
     font-weight: 900;
     background-color: #FFD166;
     color: #073B4C;
 }
-.table-columns th:last-child, .table-columns td:last-child{
+.table-columns th:last-child, 
+.table-columns td:last-child{
     font-weight: 900;
     background-color: #EF476F;
     color: #3a0ca3;
     font-size: larger;
     text-align: right;
 }
-.table-columns th:nth-child(even), .table-columns td:nth-child(even){
+.table-columns th:nth-child(even), 
+.table-columns td:nth-child(even){
     background-color: #FFAFCC;
     color: #ff6b35;
     text-decoration: none;
@@ -71,9 +74,126 @@ html{
     background-color: #FFD166;
     color: #073B4C;
 }
-.table-combinada td:hover, .table-combinada th:hover, .table-combinada tr:hover
+.table-combinada td:hover, 
+.table-combinada th:hover, 
+.table-combinada tr:hover
 {
     background-color: transparent;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #9a031e;
+}
+/* Enlaces con pseudoclases */
+.boton{
+    padding: 20px;
+    background-color: #619B8A;
+    border-radius: 30% 20% 30% 10%;
+    color: #233D4D;
+}
+.boton:hover{
+    padding: 20px;
+    background-color: #FE7F2D;
+    border-radius: 15px;
+    color: #FCCA46;
+}
+.boton:active{
+    padding: 20px;
+    background-color: #aa2dfe;
+    border-radius: 30% 20% 30% 10%;
+    color: #8d5add;
+    border: 1px dashed #5f0f40;
+}
+.boton:visited{
+    padding: 20px;
+    background-color: #31393c;
+    border-radius: 30% 20% 30% 10%;
+    color: #2176ff;
+    border: 1px dashed #33a1fd;
+}
+/* Estilos para clase ejemplo */
+.ejemplo{
+    color: black;
+    margin: 5px;
+    border: 1px solid palevioletred;
+    background-color: #5E548E;
+    list-style: square;
+}
+.ejemplo:nth-child(odd){
+    color:lightblue;
+    background-color: #F3722C;
+}
+.ejemplo:last-child{
+    color:#F3722C;
+    background-color: lightblue;
+}
+.ejemplo:nth-child(2), 
+.ejemplo:nth-child(4){
+    color: #ec7d10;
+    background-color: #c200fb;
+}
+.ejemplo:hover{
+    font-size: 1.3em;
+    text-decoration:overline;
+    text-decoration-style: wavy;
+    text-shadow: 0 2px 2px #070707;
+    box-shadow: 0 0 25px grey;
+}
+/* Estilos para los párrafos con pseudoelementos */
+.pse-before::before{
+    content: "Hola como estas?";
+    font-size: large;
+    color: #711e7e;
+    background-color: #33a1fd;
+}
+.pse-after::after{
+    content: "😀";
+    font-size: large;
+}
+.pse-letter::first-letter{
+    font-size: 2em;
+    color: blueviolet;
+    font-weight: 800;
+}
+.pse-line::first-line{
+    text-decoration: underline;
+    background-color: #7e411e;
+}
+
+/* Combinación máxima */
+.pse::before{
+    content: "Hola 😀💚";
+}
+.pse::first-letter{
+    color:#3a0ca3;
+}
+.pse::after{
+    content: "💚😺";
+}
+.pse::first-line{
+    color: #ca9738;
+    font-size: 2.5em;
+    font-family: fantasy;
+}
+
+/* Estilos combinados */
+.combinado ul li{
+    padding: 5px;
+    background-color: #ebabac;
+    color:#711e7e;
+    margin: 10px 0;
+    border-radius: 10%;
+    font-weight: 400;
+    list-style: none;
+}
+.combinado li:hover{
+    color:#331e7e;
+}
+.combinado li:first-child{
+    font-weight: bold;
+}
+.combinado li:hover::before{
+    content: "🌼";
+}
+.combinado li:last-child::after{
+    content: " Bye 😼";
+    color: orangered;
 }
