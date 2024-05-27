@@ -1,0 +1,161 @@
+/* María Laura Asuaje */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+.example{
+    border: 1px solid black;
+    margin-bottom: 15px;
+    padding: 20px;
+    position: relative;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: deepskyblue;
+    margin: 10px;
+    border-radius: 20px;
+    /* las propiedades a modificar */
+    transition-property: width, background-color, border-radius; 
+    /* el tiempo de duración de la transicion  */
+    transition-duration: 3s, 5s, 7s;
+    /* el tiempo de retardo de la animación */
+    transition-delay: 1s, 0s, 6s;
+}
+.box:hover{
+    width: 450px;
+    background-color: pink;
+    border-radius: 50px;
+}
+.ease{transition-timing-function: ease;}
+.linear{transition-timing-function: linear;}
+.ease-in{transition-timing-function: ease-in;}
+.ease-out{transition-timing-function:ease-out;}
+.ease-inout{transition-timing-function:ease-in-out;}
+.step-start{transition-timing-function:step-start;}
+.step-end{transition-timing-function:step-end;}
+.ease-in{transition-timing-function: ease-in;}
+.ease-in{transition-timing-function: ease-in;}
+.steps{transition-timing-function: steps(14, start);}
+.cubic{transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);}
+
+.boton{
+    background-color: rgb(174, 67, 196);
+    color: paleturquoise;
+    padding: 10px;
+    border-radius: 10px;
+    /* forma abreviada */
+    transition: background-color 1s linear;
+}
+.boton:hover{
+    background-color: coral;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+
+}
+li{
+    list-style: none;
+    letter-spacing: 5px;
+    transition: 2s;
+    font-size: 2em;
+    color: blueviolet;
+}
+li:hover{
+    filter: blur(70px);
+    opacity: 0;
+    filter: contrast(50%);
+}
+.animacion{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    /* nombramos la animación */
+    animation-name: anime;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    /* animation-timing-function: calc(0.25, 0.46, 0.45, 0.94); */
+}
+/* Definir los fotogramas clave */
+@keyframes anime{
+    0%{background-color: rgb(63, 46, 216); left: 0; transform: rotate(0deg);}
+    25%{background-color: lightyellow;left:25%; transform: rotate(90deg);}
+    50%{background-color: lightsalmon; left: 50%; transform: rotate(180deg);}
+    100%{background-color: darkolivegreen; left: 80%; transform: rotate(270deg);}
+}
+
+/* Estilo base para las cajas */
+.box2{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: violet;
+    display: inline-block;
+    position: relative; 
+     /* Necesario para la animación de movimiendo*/
+    }
+
+    /* Animación de movimiento */
+    @keyframes move{
+        0% { left: 0%; }
+        25% { left: 25% }
+        50% { left: 50% }
+        100% { left: 100% }
+    }
+    
+    .move{
+        animation: move 5s infinite alternate;
+    }
+    /* Animación camnbio de color */
+ @keyframes color{
+            0% { background-color: rgb(110, 110, 207); }
+            25% { background-color: rgb(97, 86, 94); }
+            50% { background-color: aqua; }
+            75% { background-color: violet; }
+            100% { background-color: rgb(51, 51, 177); }
+    }
+.color{
+        animation: color 5s infinite alternate;
+}
+    /* Animación de Escalado */
+@keyframes scale {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.5); }
+    50% { transform: scale(2); }
+    75% { transform: scale(1.5); }
+    100% { transform: scale(1); }
+}
+
+.scale {
+    animation: scale 5s infinite alternate;
+}
+
+    /* Animación de Rotación */
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(90deg); }
+    50% { transform: rotate(180deg); }
+    75% { transform: rotate(270deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.rotate {
+    animation: rotate 5s infinite linear;
+}
+
+    /* Animación de Opacidad */
+@keyframes opacity {
+    0% { opacity: 1; }
+    25% { opacity: 0.75; }
+    50% { opacity: 0.5; }
+    75% { opacity: 0.25; }
+    100% { opacity: 1; }
+}
+
+.opacity {
+    animation: opacity 5s infinite alternate;
+}
