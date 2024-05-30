@@ -1,0 +1,37 @@
+<!-- Maria laura Asuaje -->
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="María Laura Asuaje">
+    <meta name="copyright" content="María Laura Asuaje">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Titulo del proyecto -->
+    <title>Formulario - Atributos</title>
+    <!-- Hoja de estilo -->
+    <link rel="stylesheet" href="/Css/estilo-formulario.css">
+</head>
+<body>
+    <form action="" method="post">
+        <label for="nombre" id="nombre">Nombre:</label>
+        <input type="text" placeholder="Introduzca su nombre" size="50" required minlength="3" maxlength="20"><br>
+        <label for="numero de personas" id="personas">No.Personas:</label>
+        <input type="number" placeholder="Introduzca número de personas" size="50" required><br>
+        <label for="dia" id="dia">Día de la reserva:</label>
+        <input type="text" placeholder="Introduzca fecha de reserva" size="50" required><br>
+        <label for="hora" id="hora">Hora de la reserva</label>
+        <input type="time" placeholder="Introduzca hora de reserva" size="30" required><br>
+        <label for="email" id="email">Email</label>
+        <input type="" placeholder="Introduzca email" size="30" required><br>
+        <label for="telefono" id="tlf">Telefono</label>
+        <input type="text" placeholder="Introduzca telefóno de contacto" size="30" required maxlength="9"><br><br>
+        <label for="textarea">Información</label>
+        <textarea name="info" id="info" size="80" required>Escribe aquí alergía o información adicional</textarea>
+        <button type="submit" class="boton">Enviar</button>
+        <button type="reset" class="boton1">Borrar</button>
+    </form>
+</body>
+</html>

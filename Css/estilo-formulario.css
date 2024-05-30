@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    font-family: "Montserrat", sans-serif;
+    color: rgb(19, 18, 18);
+}
+
+form{
+    width: 500px;
+    border: 1px solid black;
+    height: 300;
+    padding: 20px 40px;
+    margin-top: 20px;
+    background: rgba(244, 245, 247, 0.493);
+}
+#nombre{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+#personas{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+#dia{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+#hora{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+#email{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+#tlf{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+#info{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.boton{
+    color: rgb(238, 187, 145);
+    margin-top: 15px;
+    border-radius: 5%;
+    transition: background-color 1s linear;
+}
+.boton:hover{
+    background-color: rgb(230, 85, 36);
+}
+.boton1{
+    color: rgb(238, 101, 101);
+    margin-top: 15px;
+    border-radius: 5%;
+    transition: background-color 1s linear;
+}
